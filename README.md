@@ -1,3 +1,9 @@
+# This repository is now obsolete (for inference at least)
+Use [ExLlama](https://github.com/turboderp/exllama) instead, it performs far better than GPTQ-For-LLaMa and works perfectly in ROCm (21-27 tokens/s on an RX 6800 running LLaMa 2!).
+Maybe give the very new [ExLlamaV2](https://github.com/turboderp/exllamav2) a try too if you want to risk with something more bleeding edge.
+
+I only made this as a rather quick port as it only changes few things to make the HIP kernel compile, just so I can mess around with LLMs on my AMD GPU. I do not have experience in programming anything AI/Machine Learning related or even much in GPGPU in general, the most experience I have is with Vulkan and even I wouldn't say I am great at it. If I had the skills, interest and time, I would have tried making a sort of Vulkan kernel backend of some sort.
+
 # GPTQ-for-LLaMA
 4 bits quantization of [LLaMA](https://arxiv.org/abs/2302.13971) using [GPTQ](https://arxiv.org/abs/2210.17323)
 
